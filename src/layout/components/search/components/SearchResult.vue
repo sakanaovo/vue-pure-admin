@@ -15,9 +15,15 @@ interface optionsItem {
   };
 }
 
+interface HistoryAndFavorite {
+  history: string[];
+  favorite: string[];
+}
+
 interface Props {
   value: string;
   options: Array<optionsItem>;
+  historyAndFavorite: HistoryAndFavorite | null;
 }
 
 interface Emits {
